@@ -24,7 +24,7 @@ Each lab work in the repository has its own structure and can be run using Maven
 For example, to run the first lab work:
 
 ```bash
-cd Lab1
+cd JavaLg1
 ```
 
 3. **Run the project using Maven**
