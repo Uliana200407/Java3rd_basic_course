@@ -16,8 +16,8 @@ Each lab work in the repository has its own structure and can be run using Maven
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/username/Java_1st_Labs.git
-   cd Java_1st_Labs
+   git clone (https://github.com/Uliana200407/Java3rd_basic_course.git)
+   cd src
 
 2. **Navigate to the specific lab work**
 
