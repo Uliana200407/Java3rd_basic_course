@@ -38,4 +38,26 @@ mvn exec:java -Dexec.mainClass="org.example.MatrixLab"
 ```bash
 mvn test
 ```
+## Java 2nd Labwork
+### Step 1: Navigate to the Project Directory
+```bash
+cd ~/Desktop/Java\ Language\ Labs/JavaLg2
+```
+### Step 2: Compile the Java Code
+```bash
+javac -d out -cp src/main/java src/main/java/org/example/*.java src/test/java/org/example/*.java
+```
+### Step 3: Run the Main Class
+```bash
+java -cp out org.example.LabWork2
+```
+### Step 4: Run the JUnit Tests
+```bash
+java -jar junit-platform-console-standalone.jar -cp out --select-class org.example.LabWork2Test
+```
+### Step 5: Run the tests with Maven
+```bash
+mvn test
+```
+
 
