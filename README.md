@@ -60,4 +60,25 @@ java -jar junit-platform-console-standalone.jar -cp out --select-class org.examp
 mvn test
 ```
 
+# Java 3rd Labwork
+### Step 1: Navigate to the Project Directory
+```bash
+cd ~/Desktop/Java\ Language\ Labs/JavaLg3
+```
+### Step 2: Compile the Java Code
+```bash
+javac -d out -cp src/main/java src/main/java/org/example/*.java src/test/java/org/example/*.java
+```
+### Step 3: Run the Main Class
+```bash
+javac -d out -cp src/main/java src/main/java/org/example/*.java src/test/java/org/example/*.java
+```
+### Step 4: Run the JUnit Tests
+```bash
+java -jar junit-platform-console-standalone.jar -cp out --select-class org.example.CarTest
+```
+### Step 5: Run the tests with Maven
+```bash
+mvn test
+```
 
