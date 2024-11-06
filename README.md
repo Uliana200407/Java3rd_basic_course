@@ -106,3 +106,24 @@ cd ../../../..
 ```bash
 mvn test
 ```
+## Java 5th Labwork
+### Step 1: Navigate to Your Project Folder
+```bash
+cd path/to/your/project/src
+```
+### Step 2: Create the Package Structure in src Folder
+```bash
+mkdir -p org/example
+```
+### Step 3: Compile the Program
+```bash
+javac org/example/*.java
+```
+### Step 4: Run the Program
+```bash
+java org.example.CandyGiftApp
+```
+### Step 5: Run the tests with Maven
+```bash
+mvn test
+```
