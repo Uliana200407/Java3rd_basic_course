@@ -127,3 +127,20 @@ java org.example.CandyGiftApp
 ```bash
 mvn test
 ```
+## Java 6th Labwork
+### Step 1: Navigate to Your Project Folder
+```bash
+cd /path/to/your/project
+```
+### Step 2: Compile the project:
+```bash
+mvn compile
+```
+### Step 3: Compile the test classes
+```bash
+mvn test-compile
+```
+### Step 4: Run the tests with Maven
+```bash
+mvn test
+```
