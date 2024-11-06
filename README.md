@@ -82,3 +82,27 @@ java -jar junit-platform-console-standalone.jar -cp out --select-class org.examp
 mvn test
 ```
 
+# Java 4th Labwork
+### Step 1: Clone the Repository
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+### Step 2: Compile the Code
+```bash
+cd src/main/java
+javac org/example/*.java
+```
+### Step 3: Run the Application
+```bash
+java org.example.LabWork2Executor
+```
+### Step 4: Run Unit Tests (Optional)
+```bash
+# Navigate back to the root directory (if necessary)
+cd ../../../..
+```
+### Step 5: Run the tests with Maven
+```bash
+mvn test
+```
