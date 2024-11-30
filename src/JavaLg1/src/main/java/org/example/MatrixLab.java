@@ -58,63 +58,49 @@ public class MatrixLab {
      * @return the transposed matrix
      */
     public static byte[][] transposeMatrix(byte[][] matrix) {
-        // Get matrix dimensions
         int rows = matrix.length;
         int cols = matrix[0].length;
+        byte[][] transposedMatrix = new byte[cols][rows];  // Invert rows and cols
 
-        // Create a new matrix for the transposed result
-        byte[][] transposedMatrix = new byte[cols][rows];
-
-        // Fill the transposed matrix with values from the original matrix
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                transposedMatrix[j][i] = matrix[i][j];
+                transposedMatrix[j][i] = matrix[i][j];  // Swap rows and columns
             }
         }
-
         return transposedMatrix;
     }
 
     /**
-     * Calculates the minimum row sum from the matrix.
+     * Calculates the sum of the lowest elements in each row of the matrix.
      *
-     * @param matrix the matrix to calculate the row sums from
-     * @return the minimum row sum
+     * @param matrix the matrix to process
+     * @return the sum of the minimum elements of each row
      */
     public static int calculateMinRowSum(byte[][] matrix) {
-        // Initialize minSum to the maximum possible integer value
-        int minSum = Integer.MAX_VALUE;
-
-        // Iterate through each row
-        for (int i = 0; i < matrix.length; i++) {
-            int rowSum = 0;
-
-            // Sum elements in the row
-            for (int j = 0; j < matrix[i].length; j++) {
-                rowSum += matrix[i][j];
+        int sum = 0;
+        for (byte[] row : matrix) {
+            byte minInRow = row[0]; // Assume the first element is the smallest initially
+            for (byte num : row) {
+                if (num < minInRow) {
+                    minInRow = num; // Update min if a smaller value is found
+                }
             }
-
-            // Update minSum if the current row sum is smaller
-            if (rowSum < minSum) {
-                minSum = rowSum;
-            }
+            sum += minInRow; // Add the smallest value of this row to the sum
         }
-
-        return minSum;
+        return sum;
     }
 
     /**
-     * Prints the given matrix to the console.
+     * Prints the matrix to the console.
      *
      * @param matrix the matrix to print
      */
     public static void printMatrix(byte[][] matrix) {
-        // Loop through rows and columns to print the matrix
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + "\t"); // Tab-separated values
+        for (byte[] row : matrix) {
+            for (byte element : row) {
+                System.out.print(element + " ");
             }
-            System.out.println(); // Newline after each row
+            System.out.println();
         }
     }
 }

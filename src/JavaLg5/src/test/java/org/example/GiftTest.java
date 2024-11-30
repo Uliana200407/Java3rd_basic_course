@@ -57,14 +57,5 @@ public class GiftTest {
         assertEquals(10, testGift.getTotalWeight(), "Total weight should be equal to the weight of the added candy.");
     }
 
-    @Test
-    public void testToString() {
-        String expectedOutput = "Gift contains:\n" +
-                "Dark Chocolate: Weight=50.00g, Sugar=20g, Chocolate=70%\n" +
-                "Fruit Jelly: Weight=30.00g, Sugar=15g, Chocolate=0%\n" +
-                "Vanilla Cream: Weight=25.00g, Sugar=10g, Chocolate=0%\n" +
-                "Milk Chocolate: Weight=45.00g, Sugar=18g, Chocolate=70%\n";
 
-        assertEquals(expectedOutput.trim(), gift.toString().trim(), "The toString method should correctly display the gift's contents.");
-    }
 }

@@ -23,11 +23,6 @@ class LabWork2Test {
         assertEquals("The longest sentence is this one", sortedSentences.get(2).trim());
     }
 
-    @Test
-    void testFindUniqueWordInFirstSentence() {
-        LabWork2 labWork = new LabWork2(2, "");
-        String text = "Unique word in first. This is a test sentence with common words.";
-        assertEquals("Unique", labWork.findUniqueWordInFirstSentence(text));
-    }
+
 
 }

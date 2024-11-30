@@ -28,7 +28,6 @@ public class MatrixLabTest {
 
     @Test
     public void testCalculateMinRowSum() {
-
         byte[][] matrix1 = {
                 {5, 8, 3},
                 {1, 2, 7},
@@ -43,7 +42,7 @@ public class MatrixLabTest {
                 {-1, -2, -7},
                 {-9, -5, 0}
         };
-        int expectedSum2 = -24;
+        int expectedSum2 = -24; // -8 + -7 + -9
         int actualSum2 = MatrixLab.calculateMinRowSum(matrix2);
         assertEquals(expectedSum2, actualSum2);
 
@@ -52,7 +51,7 @@ public class MatrixLabTest {
                 {4, 4, 4},
                 {4, 4, 4}
         };
-        int expectedSum3 = 12;
+        int expectedSum3 = 12;  // 4 + 4 + 4
         int actualSum3 = MatrixLab.calculateMinRowSum(matrix3);
         assertEquals(expectedSum3, actualSum3);
     }
